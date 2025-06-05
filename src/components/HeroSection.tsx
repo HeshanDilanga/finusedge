@@ -1,25 +1,24 @@
-
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   const scrollToContact = () => {
-    const element = document.getElementById('contact');
+    const element = document.getElementById("contact");
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-nexedge-dark-blue via-nexedge-navy to-nexedge-primary-blue relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-finusedge-dark-blue via-finusedge-navy to-finusedge-primary-blue relative overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-nexedge-accent-blue/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-finusedge-accent-blue/10 rounded-full blur-3xl animate-float"></div>
         <div
-          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-nexedge-light-blue/10 rounded-full blur-3xl animate-float"
+          className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-finusedge-light-blue/10 rounded-full blur-3xl animate-float"
           style={{ animationDelay: "1s" }}
         ></div>
       </div>
@@ -30,8 +29,8 @@ const HeroSection = () => {
           <div className="text-center md:text-left animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Level Up Your Business with{" "}
-              <span className="bg-gradient-to-r from-nexedge-accent-blue to-nexedge-light-blue bg-clip-text text-transparent">
-                NexEdge
+              <span className="bg-gradient-to-r from-finusedge-accent-blue to-finusedge-light-blue bg-clip-text text-transparent">
+                FinusEdge
               </span>
             </h1>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -43,7 +42,7 @@ const HeroSection = () => {
               <Button
                 onClick={scrollToContact}
                 size="lg"
-                className="bg-gradient-to-r from-nexedge-primary-blue to-nexedge-light-blue hover:from-nexedge-light-blue hover:to-nexedge-accent-blue text-white group"
+                className="bg-gradient-to-r from-finusedge-primary-blue to-finusedge-light-blue hover:from-finusedge-light-blue hover:to-finusedge-accent-blue text-white group"
               >
                 Get Started
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -56,7 +55,7 @@ const HeroSection = () => {
                 }
                 variant="outline"
                 size="lg"
-                className="border-nexedge-accent-blue text-nexedge-accent-blue hover:bg-nexedge-accent-blue hover:text-white"
+                className="border-finusedge-accent-blue text-finusedge-accent-blue hover:bg-finusedge-accent-blue hover:text-white"
               >
                 Learn More
               </Button>
@@ -71,11 +70,11 @@ const HeroSection = () => {
             <div className="relative">
               <img
                 // src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                src="hero.jpg"
+                src="hero4.jpg"
                 alt="Professional workspace with laptop"
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-nexedge-primary-blue/20 to-transparent rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-finusedge-primary-blue/20 to-transparent rounded-2xl"></div>
             </div>
           </div>
         </div>

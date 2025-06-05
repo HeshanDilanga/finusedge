@@ -63,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				nexedge: {
+				finusedge: {
 					'dark-blue': '#0F172A',
 					'primary-blue': '#1E40AF',
 					'light-blue': '#3B82F6',
