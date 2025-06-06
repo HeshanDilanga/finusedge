@@ -28,7 +28,7 @@ const HeroSection = () => {
           {/* Content */}
           <div className="text-center md:text-left animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Level Up Your Business with{" "} test
+              Level Up Your Business with{" "}
               <span className="bg-gradient-to-r from-finusedge-accent-blue to-finusedge-light-blue bg-clip-text text-transparent">
                 FinusEdge
               </span>
