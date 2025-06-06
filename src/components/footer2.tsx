@@ -19,11 +19,13 @@ export default function Contact() {
       title: "Message Sent!",
       description:
         "Thank you for contacting FinusEdge. We'll get back to you soon!",
+      className: "bg-[#0f172a] text-[#cbd5e1] border border-[#1e40af]",
     });
     setResult("Sending....");
 
     const formData = new FormData(event.currentTarget);
-    formData.append("access_key", "9ed5955f-d2ec-4bb4-988a-9ce869d25bcd");
+    // formData.append("access_key", "9ed5955f-d2ec-4bb4-988a-9ce869d25bcd");
+    formData.append("access_key", "5a84f1df-e9e8-4e5e-8678-f855e286f3c4");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
