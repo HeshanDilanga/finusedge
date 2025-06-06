@@ -4,12 +4,22 @@ import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
+import { useToast } from "@/hooks/use-toast";
+
 
 export default function Contact() {
   const [result, setResult] = useState("");
+    const { toast } = useToast();
+  
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    // Simulate form submission
+    toast({
+      title: "Message Sent!",
+      description:
+        "Thank you for contacting FinusEdge. We'll get back to you soon!",
+    });
     setResult("Sending....");
 
     const formData = new FormData(event.currentTarget);
