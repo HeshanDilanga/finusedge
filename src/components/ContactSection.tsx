@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import Contact from "./footer2";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -59,7 +60,7 @@ const ContactSection = () => {
                 Send us a message
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            {/* <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Full Name</Label>
@@ -111,7 +112,8 @@ const ContactSection = () => {
                   Send Message
                 </Button>
               </form>
-            </CardContent>
+            </CardContent> */}
+            <Contact />
           </Card>
 
           {/* Contact Information */}
