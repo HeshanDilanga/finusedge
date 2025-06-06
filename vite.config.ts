@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [react()],
-  base: "/nexedge/",
+  base: "/finusedge/",
 
   resolve: {
     alias: {
@@ -26,7 +26,7 @@ export default defineConfig(({ mode }) => ({
 
 // // https://vitejs.dev/config/
 // export default defineConfig(({ mode }) => ({
-//   base: "/nexedge/", // <-- ✅ this is required for GitHub Pages
+//   base: "/finusedge/", // <-- ✅ this is required for GitHub Pages
 //   server: {
 //     host: "::",
 //     port: 8080,
